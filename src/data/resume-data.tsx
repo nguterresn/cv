@@ -76,10 +76,14 @@ export const RESUME_DATA = {
       start: "2021",
       end: "Current",
       description:
-        "In charge of building, testing, and maintaining all Kisi devices. Guided the team through " +
-        "the advancement of the next generation of access control devices and helped improve the " +
-        "team development environment and tools."
-    },
+        "Developed the Kisi Controller Pro 2 from early revisions to production ready. " +
+        "Worked on the firmware of a 4-channel Wiegand to UART communication. " +
+        "Designed the first architecture for RFID cards and increased the limited 4 supported cards to as many as available. " +
+        "Created a new testing framework that reduced the execution time in 76% and the lines of code in 59%. " +
+        "Researched and took the lead on the planning for a new generation of devices and IoT connectivity, which implied going through serverless services such as: AWS IoT Core or AWS GreenGrass. " +
+        "Designed a new development environment for freeRTOS development mostly written in CMake and with support for VSCode. " +
+        "Developed a bluetooth central application to manage the Silabs BGM220 module to connect to Kisi peripherals and optimized it with parallel discovery, all written in C."
+      },
     {
       company: "Academia de Robotica",
       link: "https://www.academiarobotica.pt",
@@ -88,7 +92,7 @@ export const RESUME_DATA = {
       start: "2020",
       end: "2021",
       description:
-        "Instructed and guided children and adolescents as they embarked on their initial" +
+        "Instructed and guided children and adolescents as they embarked on their initial " +
         "exploration of the world of robotics.",
     },
     {
@@ -99,7 +103,7 @@ export const RESUME_DATA = {
       start: "2018",
       end: "2018",
       description:
-        "Deployed an over-the-air anti-faults protocol to a multi-node network.",
+        "Deployed an over-the-air anti-faults protocol, written in C, to a multi-node network.",
     },
   ],
   skills: [
@@ -163,6 +167,14 @@ export const RESUME_DATA = {
       description: "Library to facilitate seamless communication between the Due and the KA3005P power supply",
       link: {
         href: "https://github.com/nguterresn/due-ka3005p",
+      },
+    },
+    {
+      title: "Personal Website",
+      techStack: ["Side Project", "Portfolio", "Blog"],
+      description: "My personal website — where I write about my side projects and other things I'm passionate about.",
+      link: {
+        href: "https://nguterresn.github.io/quartz",
       },
     },
   ],
