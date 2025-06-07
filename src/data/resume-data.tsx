@@ -23,13 +23,10 @@ export const RESUME_DATA = {
   name: "Nuno Nogueira",
   initials: "NN",
   location: "Stockholm, Sweden, CET",
-  about:
-    "Embedded Software Developer focused on making things.",
-  summary: "As an Embedded Software Developer I've acquired experience with " +
-    "microcontrollers, Linux and real time operating systems with a strong link between " +
-    "the device and the cloud. Mostly focused on C/C++, CMake and Javascript. I successfully build, test and maintain code for " +
-    "systems on the field. My hobbyist side also works with PCB & CAD Design.",
-  avatarUrl: "https://pbs.twimg.com/profile_images/1751600040450125824/MjiaUKKF_400x400.jpg",
+  about: "Embedded Software Developer",
+  summary: `Embedded Software Developer with hands-on experience in microcontrollers and real-time operating systems, emphasizing device-to-cloud connectivity. Proficient in C, CMake, AssemblyScript and a sprinkle of Rust, with a proven track record of building, testing, and maintaining robust field-deployed systems. Also engaged in PCB and CAD design as an hobby.`,
+  avatarUrl:
+    "https://pbs.twimg.com/profile_images/1751600040450125824/MjiaUKKF_400x400.jpg",
   personalWebsiteUrl: "https://nguterresn.github.io/quartz",
   contact: {
     email: "guterresnogueira@gmail.com",
@@ -55,7 +52,8 @@ export const RESUME_DATA = {
   education: [
     {
       school: "University of Porto",
-      degree: "Master's degree in Electrical & Computer Engineering with " +
+      degree:
+        "Master's degree in Electrical & Computer Engineering with " +
         "specialization in Embedded Systems and Microelectronics.",
       start: "2018",
       end: "2021",
@@ -65,16 +63,26 @@ export const RESUME_DATA = {
       degree: "Bachelor's Degree in Electrical & Computer Engineering",
       start: "2015",
       end: "2018",
-    }
+    },
   ],
   work: [
+    {
+      company: "Electrolux",
+      link: "https://www.electrolux.se",
+      badges: [],
+      title: "Embedded Software Developer",
+      start: "2024",
+      end: "Current",
+      description:
+        "Developed a user interface optimized for low-end devices using a WebAssembly runtime and Zephyr OS.",
+    },
     {
       company: "Kisi",
       link: "https://www.getkisi.com",
       badges: [],
-      title: "IoT Developer",
+      title: "IoT Developer / Gen3 Team Lead",
       start: "2021",
-      end: "Current",
+      end: "2024",
       description:
         "Developed the Kisi Controller Pro 2 from early revisions to production ready. " +
         "Worked on the firmware of a 4-channel Wiegand to UART communication. " +
@@ -82,8 +90,8 @@ export const RESUME_DATA = {
         "Created a new testing framework that reduced the execution time in 76% and the lines of code in 59%. " +
         "Researched and took the lead on the planning for a new generation of devices and IoT connectivity, which implied going through serverless services such as: AWS IoT Core or AWS GreenGrass. " +
         "Designed a new development environment for freeRTOS development mostly written in CMake and with support for VSCode. " +
-        "Developed a bluetooth central application to manage the Silabs BGM220 module to connect to Kisi peripherals and optimized it with parallel discovery, all written in C."
-      },
+        "Developed a bluetooth central application to manage the Silabs BGM220 module to connect to Kisi peripherals and optimized it with parallel discovery, all written in C.",
+    },
     {
       company: "Academia de Robotica",
       link: "https://www.academiarobotica.pt",
@@ -108,39 +116,53 @@ export const RESUME_DATA = {
   ],
   skills: [
     "C",
-    "C++",
+    "Rust",
     "IoT",
     "RTOS",
     "ARM32",
+    "ESP32",
     "AVR",
-    "Embedded Systems",
     "Linux",
-    "Control Systems",
+    "Zephyr",
     "Python",
-    "Javascript",
+    "WebAssembly",
     "Google Cloud Platform",
     "PCB Design (Kicad)",
     "CAD Design (Fusion360)",
   ],
   projects: [
     {
-      title: "CMake Gecko SDK",
-      techStack: [
-        "Side Project",
-        "CMake",
-      ],
-      description: "Gecko SDK Blinky example using CMake.",
+      title: "esp-drv8833",
+      techStack: ["Side Project", "Rust"],
+      description:
+        "A Rust crate that provides control over the DRV8833 Dual H-Bridge Motor Driver",
       link: {
-        href: "https://consultly.com/",
+        href: "https://github.com/nguterresn/esp-drv8833",
       },
     },
     {
-      title: "BattleButBot (WIP)",
-      techStack: ["Side Project", "ESP32", "CAD Design", "PCB Design", "C/C++"],
+      title: "3mode-controller",
+      techStack: ["Side Project", "esp-idf", "CAD Design", "PCB Design"],
       description:
-        "Your Ultimate Antweight Fighting Robot Companion",
+        "Hardware Controller for Hobbyist Projects with support for ESPNow, nRF24, and Bluetooth",
       link: {
-        href: "https://jarocki.me/",
+        href: "https://github.com/nguterresn/3mode-controller",
+      },
+    },
+    {
+      title: "BattleButBot",
+      techStack: ["Side Project", "ESP32", "CAD Design", "PCB Design", "C"],
+      description: "Your Ultimate Antweight Fighting Robot Companion",
+      link: {
+        href: "https://github.com/nguterresn/battlebutbot",
+      },
+    },
+    {
+      title: "4WD Robot",
+      techStack: ["Side Project", "CAD Design"],
+      description: "How to build a simple 4WD Robot",
+      link: {
+        href: "https://www.nunonogueira.com/robot4wd",
       },
     },
     {
@@ -155,24 +177,16 @@ export const RESUME_DATA = {
     {
       title: "End Of Line Testing Board",
       techStack: ["Side Project", "CAD Design", "PCB Design", "Access Control"],
-      description:
-        "A End Of Line Board for Testing Access Control Systems",
+      description: "A End Of Line Board for Testing Access Control Systems",
       link: {
         href: "https://github.com/nguterresn/end-of-line-board",
       },
     },
     {
-      title: "Arduino Due + KA3005P",
-      techStack: ["Side Project", "Arduino", "USB"],
-      description: "Library to facilitate seamless communication between the Due and the KA3005P power supply",
-      link: {
-        href: "https://github.com/nguterresn/due-ka3005p",
-      },
-    },
-    {
       title: "Personal Website",
       techStack: ["Side Project", "Portfolio", "Blog"],
-      description: "My personal website — where I write about my side projects and other things I'm passionate about.",
+      description:
+        "My personal website — where I write about my side projects and other things I'm passionate about.",
       link: {
         href: "https://nguterresn.github.io/quartz",
       },
