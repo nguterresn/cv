@@ -26,7 +26,7 @@ export const RESUME_DATA = {
   about: "Embedded Software Developer",
   summary: `Embedded Software Developer with hands-on experience in microcontrollers and real-time operating systems, emphasizing device-to-cloud connectivity. Proficient in C, CMake, AssemblyScript and a sprinkle of Rust, with a proven track record of building, testing, and maintaining robust field-deployed systems. Also engaged in PCB and CAD design as an hobby.`,
   avatarUrl:
-    "https://pbs.twimg.com/profile_images/1751600040450125824/MjiaUKKF_400x400.jpg",
+    "https://avatars.githubusercontent.com/u/38976366?s=400&u=f92935d77d04ab81c791536847a773ba3b7692b3&v=4",
   personalWebsiteUrl: "https://nguterresn.github.io/quartz",
   contact: {
     email: "guterresnogueira@gmail.com",
